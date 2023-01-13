@@ -1,38 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Mas En Scene. Maison d'hôtes provence">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mas En Scene</title>
 
     <style media="screen">
       body {
+        background: url('splash.webp') no-repeat center / cover;
         margin: 0;
         overflow: hidden;
-      }
-
-      #layout {
-        width: 100vw;
-        height: 100vh;
-        background: url('splash.webp') no-repeat center / cover;
         display: flex;
         align-items: center;
         justify-content: center;
+        min-height: 100vh;
+      }
+
+      #layout {
+        width: 33vw;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 5vh;
       }
 
       #logo {
-        width: 50vw;
-        height: 50vh;
-        background: url('logo.svg') no-repeat center / contain;
-        background-size: contain;
+        width: 33vw;
+        max-width: 80vw;
+        min-width: 300px;
       }
+
+      #contact {
+        width: 8.5vw;
+        margin: 2vw;
+        min-width: 85px;
+      }
+
+      #instagram {
+        width: 10vw;
+        margin: 2vw;
+        min-width: 100px;
+      }
+
+
     </style>
   </head>
   <body>
     <div id="layout">
-      <div id="logo">
-
-      </div>
+      <header id="head">
+        <img id="logo" src="logo.svg" alt="Mas En Scene">
+      </header>
+      <a class="nav" href="mailto:info@masenscene.com">
+        <img id="contact" src="contact.svg" alt="contact"> 
+      </a>
+      <a class="nav" href="http://instagram.com/mas_en_scene/">
+        <img id="instagram" src="instagram.svg" alt="instagram"> 
+      </a>
     </div>
   </body>
 </html>
