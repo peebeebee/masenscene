@@ -19,12 +19,22 @@
 
       #layout {
         width: 33vw;
-        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 5vh;
+      }
+
+      #head {
+        margin-bottom: 7vh;
+      }
+
+      #nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: auto;
       }
 
       #logo {
@@ -53,12 +63,14 @@
       <header id="head">
         <img id="logo" src="logo.svg" alt="Mas En Scene">
       </header>
-      <a class="nav" href="mailto:info@masenscene.com">
-        <img id="contact" src="contact.svg" alt="contact"> 
-      </a>
-      <a class="nav" href="http://instagram.com/mas_en_scene/">
-        <img id="instagram" src="instagram.svg" alt="instagram"> 
-      </a>
+      <nav id="nav">
+        <a class="nav" href="mailto:info@masenscene.com">
+          <img id="contact" src="contact.svg" alt="contact"> 
+        </a>
+        <a class="nav" href="http://instagram.com/mas_en_scene/">
+          <img id="instagram" src="instagram.svg" alt="instagram"> 
+        </a>
+      </nav>
     </div>
   </body>
 </html>
